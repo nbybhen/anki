@@ -57,7 +57,7 @@ def show(mw: aqt.AnkiQt) -> QDialog:
 
     # WebView contents
     ######################################################################
-    abouttext = "<center><img src='/_anki/imgs/anki-logo-thin.png'></center>"
+    abouttext = "<center><img width='222' height='98' src='/_anki/imgs/small-anki-no-bg.png'></center>"
     abouttext += f"<p>{tr.about_anki_is_a_friendly_intelligent_spaced()}"
     abouttext += f"<p>{tr.about_anki_is_licensed_under_the_agpl3()}"
     abouttext += f"<p>{tr.about_version(val=version_with_build())}<br>"
