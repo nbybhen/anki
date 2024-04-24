@@ -32,6 +32,6 @@ mod tests {
         assert_eq!(String::from("c:/foo/bar.txt"), unix_path(Utf8Path::new(&absolute_msys_path(Utf8Path::new("c:\\foo\\bar.txt"))))) ;
         assert_eq!(String::from("/c:/system32/User/Desktop/projects/main.py"),
             unix_path(Utf8Path::new(&absolute_msys_path(Utf8Path::new("\\c:\\system32\\User\\Desktop\\projects\\main.py")))));
-        assert_eq!(String::from("c:/") unix_path(Utf8Path::new(&absolute_msys_path(Utf8Path::new("c:\\")))))
+        assert_eq!(String::from("c:/"), unix_path(Utf8Path::new(&absolute_msys_path(Utf8Path::new("c:\\")))))
     }
 }
